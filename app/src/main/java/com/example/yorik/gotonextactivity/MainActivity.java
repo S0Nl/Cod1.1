@@ -35,13 +35,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this, NextActivity.class);
-        intent.putExtra("name", editText.getText().toString());
-        startActivity(intent);
+        Intent intent2 = new Intent(this, NextActivity.class);
+        intent2.putExtra("name", editText.getText().toString());
+        startActivity(intent2);
 
         Toast toast = Toast.makeText(getApplicationContext(), "Вітаю на NextActivity ;) ", Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
-
+        return;
     }
+
 }
